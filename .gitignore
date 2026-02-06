@@ -24,8 +24,10 @@ obj/
 *.suo
 *.userosscache
 *.sln.docstates
+*.json
 
 # Backup files
 *.bak
 *.log
+
 
