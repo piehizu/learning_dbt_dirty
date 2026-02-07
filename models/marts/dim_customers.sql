@@ -6,12 +6,13 @@ with customers as (
     select *
     from {{ ref('stg_jaffle_shop__customers') }}
 ),
-/*
+/* {#
 orders as (
-
+-- if you have the ref ANYWHERE in the code the graph link
     select *
     from {{ ref('stg_jaffle_shop__orders') }}
 ),
+#}
 */
 
 payments as (
