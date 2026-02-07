@@ -61,7 +61,7 @@ final as (
         customer_payments.first_order_date,
         customer_payments.most_recent_order_date,
         coalesce(customer_payments.number_of_orders, 0) as number_of_orders,
-        --SUM(amount) as lifetime_value
+        lifetime_value
 
     from customers
 
