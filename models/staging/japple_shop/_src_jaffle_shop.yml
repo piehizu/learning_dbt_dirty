@@ -1,11 +1,13 @@
 sources:
-  - name: jaffle_shop
-    database: dbt-tutorial
-    scheme: jaffle_shop
+  - name: pineapple
+    database: dbt-tutorial # Your Project ID
+    schema: jaffle_shop       # Your Dataset name
     tables:
       - name: customers
       - name: orders
   
-  - name : stripe
+  - name: stripe
+    database: dbt-tutorial
+    schema: stripe
     tables:
       - name: payments
