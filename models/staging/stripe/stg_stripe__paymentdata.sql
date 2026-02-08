@@ -1,9 +1,9 @@
 select
-    id,
-    orderid,
-    paymentmethod,
-    status,
+    id as payment_id,
+    orderid order_id,
+    paymentmethod payment_method,
+    status as payment_status,
     amount / 100 as amount,
-    created,
+    created as created_at,
 
-from dbt-tutorial.stripe.payment
+from {{ source('stripe', 'payment') }}
