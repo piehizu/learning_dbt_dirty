@@ -19,12 +19,8 @@ models:
         description: "{{ doc('order_status_option') }}"
         data_tests:
           - accepted_values:
-              values:
-                - completed
-                - shipped
-                - placed
-                - return_pending
-                - returned
+              values: ['completed', 'shipped', 'placed', 'return_pending', 'returned']
+
       - name: customer_id # name of column in orders to be checked against customers
         data_tests:
           - relationships:
