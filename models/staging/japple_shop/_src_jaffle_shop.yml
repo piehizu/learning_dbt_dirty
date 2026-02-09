@@ -4,7 +4,19 @@ sources:
     schema: jaffle_shop       # Your Dataset name
     tables:
       - name: customers
+        columns:
+          - name: id
+            description: primary key
+            data_tests:
+              - unique
+              - not_null
       - name: orders
+        columns:
+          - name: id
+            description: primary_key
+            data_tests:
+              - unique
+              - not_null
   
   - name: stripe
     database: dbt-tutorial
